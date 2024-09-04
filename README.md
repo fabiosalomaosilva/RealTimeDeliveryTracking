@@ -40,7 +40,7 @@ Ensure you have the following installed:
 1. **Clone the Repository:**
 
    ```bash
-   git clone [https://github.com/yourusername/realtime-delivery-tracking.git](https://github.com/fabiosalomaosilva/RealTimeDeliveryTracking)
+   git clone https://github.com/fabiosalomaosilva/RealTimeDeliveryTracking
    cd RealTimeDeliveryTracking
    ```
 
