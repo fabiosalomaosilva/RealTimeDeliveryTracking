@@ -40,8 +40,8 @@ Ensure you have the following installed:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/realtime-delivery-tracking.git
-   cd realtime-delivery-tracking
+   git clone [https://github.com/yourusername/realtime-delivery-tracking.git](https://github.com/fabiosalomaosilva/RealTimeDeliveryTracking)
+   cd RealTimeDeliveryTracking
    ```
 
 2. **Set Up the Solution:**
@@ -67,15 +67,18 @@ Ensure you have the following installed:
 
    With the services configured to start together, you can now run the entire solution:
 
-   - Press `F5` (or click on **Start** in Visual Studio) to start all the microservices simultaneously.
+   - Configure your solution for initialize all projects simultaneously in the Visual Studio context menu "Configure Startup Projects".
+     ![image](https://github.com/user-attachments/assets/88aa82df-0c13-4d52-9de6-b5a692beba1a)
+
+   - Press `F5` or click on **Start** in Visual Studio to start all the microservices simultaneously.
 
 5. **Accessing the APIs:**
 
    Each service will be running on its own port. You can interact with the APIs using tools like Postman or via a frontend application. For example:
 
-   - Order Service: `http://localhost:5000/api/orders`
-   - Tracking Service: `http://localhost:5001/api/tracking`
-   - Notification Service: `http://localhost:5002/api/notifications`
+   - Order Service: `http://localhost:7240/api/orders`
+   - Tracking Service: `http://localhost:7272/api/tracking`
+   - Notification Service: `http://localhost:7290/api/notifications`
 
 ## Usage
 
