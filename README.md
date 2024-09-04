@@ -1,7 +1,3 @@
-Aqui está a versão revisada do README em inglês, levando em consideração que o projeto já está criado e configurado no repositório:
-
----
-
 # Real-Time Delivery Tracking System
 
 ## Introduction
@@ -96,7 +92,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any questions or inquiries, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/yourprofile).
-
----
-
-This README now reflects the fact that the project is already set up in the repository and provides instructions on how to run the solution with multiple startup projects.
