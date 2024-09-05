@@ -36,3 +36,19 @@ services:
       - KAFKA_CLUSTERS_0_NAME=test
       - KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=localhost:9092
       - KAFKA_CLUSTERS_0_ZOOKEEPER=zookeeper:2181
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "admin"
+      POSTGRES_DB: "DeliveryService"
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis/redis-stack:latest
+    container_name: redis_track
+    ports:
+      - "6379:6379"
+      - "8001:8001"

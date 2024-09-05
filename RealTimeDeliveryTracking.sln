@@ -3,32 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderService", "OrderService\OrderService.csproj", "{3440932F-1592-4920-8297-6272B2AF89B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderService", "OrderService\OrderService.csproj", "{3440932F-1592-4920-8297-6272B2AF89B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackingService", "TrackingService\TrackingService.csproj", "{9F54DD9F-B1AE-4DC7-A8B0-CE9BC6730A50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Postgres", "Postgres\Postgres.csproj", "{27F1FB67-DFEB-43E5-B8A3-5E8CBE795F39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService", "NotificationService\NotificationService.csproj", "{E3BF4F4F-21A9-4370-B29F-EE876B5CAA69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kafka", "Kafka\Kafka.csproj", "{92A27053-4A16-49B9-AC74-5BB08E965FD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3440932F-1592-4920-8297-6272B2AF89B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3440932F-1592-4920-8297-6272B2AF89B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3440932F-1592-4920-8297-6272B2AF89B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3440932F-1592-4920-8297-6272B2AF89B2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9F54DD9F-B1AE-4DC7-A8B0-CE9BC6730A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F54DD9F-B1AE-4DC7-A8B0-CE9BC6730A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F54DD9F-B1AE-4DC7-A8B0-CE9BC6730A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F54DD9F-B1AE-4DC7-A8B0-CE9BC6730A50}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E3BF4F4F-21A9-4370-B29F-EE876B5CAA69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E3BF4F4F-21A9-4370-B29F-EE876B5CAA69}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E3BF4F4F-21A9-4370-B29F-EE876B5CAA69}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E3BF4F4F-21A9-4370-B29F-EE876B5CAA69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27F1FB67-DFEB-43E5-B8A3-5E8CBE795F39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F1FB67-DFEB-43E5-B8A3-5E8CBE795F39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27F1FB67-DFEB-43E5-B8A3-5E8CBE795F39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27F1FB67-DFEB-43E5-B8A3-5E8CBE795F39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92A27053-4A16-49B9-AC74-5BB08E965FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A27053-4A16-49B9-AC74-5BB08E965FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A27053-4A16-49B9-AC74-5BB08E965FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A27053-4A16-49B9-AC74-5BB08E965FD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A54850C6-1AC6-48A7-A72B-2DAA783BEC08}
 	EndGlobalSection
 EndGlobal
