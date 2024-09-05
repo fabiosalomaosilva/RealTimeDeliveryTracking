@@ -2,13 +2,14 @@ using Kafka.Test;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//Teste do Kafka
+KafkaTest.Execute();
+
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//Teste do Kafka
-KafkaTest.Execute();
 
 var app = builder.Build();
 
