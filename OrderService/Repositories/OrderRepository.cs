@@ -12,6 +12,7 @@ public class OrderRepository : IOrderRepository
     {
         _orderContext = orderContext;
     }
+
     public async Task<List<Order>?> GetOrders()
     {
         return await _orderContext.Orders.ToListAsync();
@@ -19,8 +20,15 @@ public class OrderRepository : IOrderRepository
 
     public async Task AddOrder(Order order)
     {
-        _orderContext.Orders.Add(order);
-        await _orderContext.SaveChangesAsync();
+        try
+        {
+            _orderContext.Orders.Add(order);
+            await _orderContext.SaveChangesAsync();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
     }
 }
-

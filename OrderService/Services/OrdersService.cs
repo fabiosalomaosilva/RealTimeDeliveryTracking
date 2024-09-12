@@ -27,4 +27,3 @@ public class OrdersService : IOrdersService
         await _kafkaProducer.ProduceAsync("order-events", new Message<Null, string> { Value = orderCreatedEvent });
     }
 }
-

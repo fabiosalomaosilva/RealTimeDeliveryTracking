@@ -15,6 +15,8 @@ services:
       - ALLOW_PLAINTEXT_LISTENER=yes
     depends_on:
       - zookeeper
+    networks:
+      - kafka-network
 
   zookeeper:
     image: bitnami/zookeeper:latest
@@ -22,6 +24,8 @@ services:
       - 2181:2181
     environment:
       - ALLOW_ANONYMOUS_LOGIN=yes
+    networks:
+      - kafka-network
 
   kafka-ui:
     image: provectuslabs/kafka-ui
@@ -33,9 +37,11 @@ services:
       - "8080:8080"
     restart: always
     environment:
-      - KAFKA_CLUSTERS_0_NAME=test
+      - KAFKA_CLUSTERS_0_NAME=local
       - KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=localhost:9092
       - KAFKA_CLUSTERS_0_ZOOKEEPER=zookeeper:2181
+    networks:
+      - kafka-network
 
   postgres:
     image: postgres
@@ -52,3 +58,7 @@ services:
     ports:
       - "6379:6379"
       - "8001:8001"
+
+networks:
+  kafka-network:
+    driver: bridge
