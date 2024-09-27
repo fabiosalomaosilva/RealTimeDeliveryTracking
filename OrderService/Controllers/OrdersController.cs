@@ -1,7 +1,7 @@
 using Domain;
 using Microsoft.AspNetCore.Mvc;
-using OrderService.Repositories;
 using OrderService.Services;
+using Postgres.Repositories;
 
 namespace OrderService.Controllers;
 

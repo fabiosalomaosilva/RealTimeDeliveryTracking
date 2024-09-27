@@ -1,8 +1,7 @@
 ﻿using Domain;
 using Microsoft.EntityFrameworkCore;
-using Postgres;
 
-namespace OrderService.Repositories;
+namespace Postgres.Repositories;
 
 public class OrderRepository : IOrderRepository
 {
@@ -30,5 +29,15 @@ public class OrderRepository : IOrderRepository
             Console.WriteLine(e);
             throw;
         }
+    }
+
+    public Task UpdateStatusOrder(Order order)
+    {
+        var orderObj = _orderContext.Orders.Find(order.Id);
+        if (orderObj == null) return Task.CompletedTask;
+        orderObj.Status = order.Status;
+        _orderContext.Orders.Update(orderObj);
+
+        return _orderContext.SaveChangesAsync();
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Confluent.Kafka;
 using Domain;
-using OrderService.Repositories;
+using Postgres.Repositories;
 using System.Text.Json;
 
 namespace OrderService.Services;

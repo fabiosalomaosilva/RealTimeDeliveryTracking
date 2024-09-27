@@ -1,10 +1,10 @@
 ﻿using Domain;
 
-namespace OrderService.Repositories;
+namespace Postgres.Repositories;
 
 public interface IOrderRepository
 {
     Task<List<Order>?> GetOrders();
     Task AddOrder(Order order);
-
+    Task UpdateStatusOrder(Order order);
 }

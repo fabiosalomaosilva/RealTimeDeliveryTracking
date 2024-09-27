@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Postgres", "Postgres\Postgr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kafka", "Kafka\Kafka.csproj", "{92A27053-4A16-49B9-AC74-5BB08E965FD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{275B9CD4-9F5B-4C1C-A1F2-57CAAC590445}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{275B9CD4-9F5B-4C1C-A1F2-57CAAC590445}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackingService", "TrackingService\TrackingService.csproj", "{B95A71FE-4C8C-459E-886B-7BD6A4C0240C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{275B9CD4-9F5B-4C1C-A1F2-57CAAC590445}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{275B9CD4-9F5B-4C1C-A1F2-57CAAC590445}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{275B9CD4-9F5B-4C1C-A1F2-57CAAC590445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B95A71FE-4C8C-459E-886B-7BD6A4C0240C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B95A71FE-4C8C-459E-886B-7BD6A4C0240C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B95A71FE-4C8C-459E-886B-7BD6A4C0240C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B95A71FE-4C8C-459E-886B-7BD6A4C0240C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

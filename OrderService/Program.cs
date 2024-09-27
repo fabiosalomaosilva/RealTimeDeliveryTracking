@@ -1,9 +1,9 @@
 using Confluent.Kafka;
 using Kafka.Test;
 using Microsoft.EntityFrameworkCore;
-using OrderService.Repositories;
 using OrderService.Services;
 using Postgres;
+using Postgres.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
