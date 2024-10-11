@@ -40,4 +40,17 @@ public class OrderRepository : IOrderRepository
 
         return _orderContext.SaveChangesAsync();
     }
+
+    public async Task<Order?> GetOrder(Guid orderId)
+    {
+        try
+        {
+            return await _orderContext.Orders.FirstOrDefaultAsync(p => p.Id == orderId);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
 }
